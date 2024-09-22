@@ -1,0 +1,1 @@
+../../3rd/LazyVim/lua/config/lazy.lua
