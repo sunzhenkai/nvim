@@ -21,3 +21,14 @@ require("neo-tree").setup({
 
 -- theme config
 -- vim.o.background = "light"
+
+-- mason
+require("mason").setup({
+	ui = {
+		icons = {
+			package_installed = "✓",
+			package_pending = "➜",
+			package_uninstalled = "✗",
+		},
+	},
+})
