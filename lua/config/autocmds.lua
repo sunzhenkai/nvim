@@ -1,4 +1,4 @@
--- custome command prefer starts with 'I'
+-- custom commands are preferred to start with 'I'
 
 -- close current tab, and move to next one
 vim.api.nvim_create_user_command("Ibd", "bd | bn", {})
