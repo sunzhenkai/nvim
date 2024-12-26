@@ -1,7 +1,7 @@
 return {
 	-- theme
 	-- add gruvbox
-	{ "ellisonleao/gruvbox.nvim" },
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
 	-- Configure LazyVim to load gruvbox
 	{
 		"LazyVim/LazyVim",
@@ -19,5 +19,17 @@ return {
 		opts = function(_, opts)
 			table.insert(opts.sources, { name = "emoji" })
 		end,
+	},
+
+	-- add any tools you want to have installed below
+	{
+		"williamboman/mason.nvim",
+		opts = {
+			-- https://github.com/williamboman/mason-lspconfig.nvim
+			ensure_installed = {
+				"markdownlint-cli2",
+				"markdown-toc",
+			},
+		},
 	},
 }

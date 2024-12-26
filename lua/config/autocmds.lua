@@ -18,3 +18,6 @@ require("neo-tree").setup({
 		},
 	},
 })
+
+-- theme config
+-- vim.o.background = "light"
