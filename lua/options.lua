@@ -1,0 +1,1 @@
+../3rd/nvchad/lua/options.lua
