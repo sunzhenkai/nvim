@@ -31,6 +31,13 @@ return {
 	-- cmake
 	{ "Civitasv/cmake-tools.nvim" },
 
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			require("config.lspconfig")
+		end,
+	},
+
 	-- add any tools you want to have installed below
 	{
 		"williamboman/mason.nvim",
