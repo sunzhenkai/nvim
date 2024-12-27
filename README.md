@@ -2,7 +2,7 @@
 
 # Dependencies
 ```shell
-brew install fzf
+brew install fzf ripgrep
 ```
 
 # 概念
