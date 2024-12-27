@@ -28,6 +28,9 @@ return {
 		end,
 	},
 
+	-- cmake
+	{ "Civitasv/cmake-tools.nvim" },
+
 	-- add any tools you want to have installed below
 	{
 		"williamboman/mason.nvim",
