@@ -296,6 +296,7 @@ return {
 				"clangd",
 				"gopls",
 				"rust-analyzer",
+                "clang-format",
 			},
 		},
 	},
