@@ -2,7 +2,7 @@
 
 # Dependencies
 ```shell
-brew install fzf ripgrep
+brew install fzf ripgrep luarocks lazygit
 ```
 
 # 概念
