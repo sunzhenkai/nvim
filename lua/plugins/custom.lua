@@ -79,7 +79,10 @@ return {
 		opts = {
 			setup = {
 				clangd = function(_, opts)
+					-- config clangd lsp here
+					-- doc: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#clangd
 					opts.capabilities.offsetEncoding = { "utf-16" }
+					opts.filetypes = { "c", "cpp", "objc", "objcpp", "cuda" }
 				end,
 			},
 		},
