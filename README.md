@@ -5,6 +5,11 @@
 brew install fzf ripgrep luarocks lazygit
 ```
 
+# 字体
+Neovim 的图标可能无法正常显示，需要安装字体。
+[字体下载站点](https://www.nerdfonts.com/font-downloads)
+可以使用 JetBrainsMono Nerd Font 字体。
+
 # 概念
 ## LSP
 LSP(Language Server Protocol) 是一个协议，用于在代码编辑器和编程语言的语言服务器之间进行通信。语言服务器提供语言特定的功能，如：
