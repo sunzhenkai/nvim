@@ -5,6 +5,9 @@
 brew install fzf ripgrep luarocks lazygit
 
 npm install yarn -g
+
+# ubuntu
+sudo apt install build-essential
 ```
 
 # 字体
