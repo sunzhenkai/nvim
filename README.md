@@ -3,6 +3,8 @@
 # Dependencies
 ```shell
 brew install fzf ripgrep luarocks lazygit
+
+npm install yarn -g
 ```
 
 # 字体
