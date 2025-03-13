@@ -54,22 +54,6 @@ require("lazy").setup({
 	},
 })
 
--- custome config for neo-tree
-require("neo-tree").setup({
-	commands = {
-		go_to_parent_dir = function(state)
-			local node = state.tree:get_node()
-			require("neo-tree.ui.renderer").focus_node(state, node:get_parent_id())
-		end,
-	},
-	window = {
-		mappings = {
-			-- go to parent node
-			["IP"] = "go_to_parent_dir",
-		},
-	},
-})
-
 -- mason
 require("mason").setup({
 	ui = {

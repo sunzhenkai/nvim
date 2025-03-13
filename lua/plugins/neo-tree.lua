@@ -56,6 +56,12 @@ return {
 		})
 	end,
 	opts = {
+		commands = {
+			go_to_parent_dir = function(state)
+				local node = state.tree:get_node()
+				require("neo-tree.ui.renderer").focus_node(state, node:get_parent_id())
+			end,
+		},
 		sources = { "filesystem", "buffers", "git_status" },
 		open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
 		filesystem = {
@@ -83,6 +89,10 @@ return {
 					desc = "Open with System Application",
 				},
 				["P"] = { "toggle_preview", config = { use_float = false } },
+
+				-- custome by wii
+				-- go to parent node
+				["IP"] = "go_to_parent_dir",
 			},
 		},
 		default_component_configs = {
