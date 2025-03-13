@@ -54,17 +54,6 @@ require("lazy").setup({
 	},
 })
 
--- mason
-require("mason").setup({
-	ui = {
-		icons = {
-			package_installed = "✓",
-			package_pending = "➜",
-			package_uninstalled = "✗",
-		},
-	},
-})
-
 -- close current tab, and move to next one
 vim.api.nvim_create_user_command("Ibd", "bd | bn", {})
 vim.api.nvim_create_user_command("NewClangFmtFile", "%!clang-format -style=Google -dump-config > .clang-format", {})
