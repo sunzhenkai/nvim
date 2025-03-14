@@ -62,3 +62,4 @@ vim.api.nvim_create_user_command("ClangFmt", "%!clang-format --style=file", {})
 
 -- theme config
 -- vim.o.background = "light"
+vim.opt.clipboard = 'unnamedplus'
