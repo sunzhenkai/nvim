@@ -11,6 +11,7 @@ return {
 			"gopls",
 			"rust-analyzer",
 			"clang-format",
+			"jsonlint",
 		},
 		ui = {
 			icons = {
