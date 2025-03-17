@@ -12,6 +12,7 @@ return {
 			"rust-analyzer",
 			"clang-format",
 			"jsonlint",
+			"cmake-language-server",
 		},
 		ui = {
 			icons = {
