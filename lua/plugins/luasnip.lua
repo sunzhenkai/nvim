@@ -24,6 +24,7 @@ return {
 		require("luasnip").filetype_extend("cs", { "csharpdoc" })
 		require("luasnip").filetype_extend("java", { "javadoc" })
 		require("luasnip").filetype_extend("c", { "cdoc" })
+		require("luasnip").filetype_extend("cc", { "cdoc" })
 		require("luasnip").filetype_extend("cpp", { "cppdoc" })
 		require("luasnip").filetype_extend("php", { "phpdoc" })
 		require("luasnip").filetype_extend("kotlin", { "kdoc" })
