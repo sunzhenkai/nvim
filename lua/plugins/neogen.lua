@@ -5,17 +5,17 @@ return {
 	end,
 	keys = {
 		{
-			"<Leader>nc",
+			"<Leader>znc",
 			"<cmd>lua require('neogen').generate({ type = 'class' })<CR>",
 			desc = "Generate Class Documentation",
 		},
 		{
-			"<Leader>nd",
+			"<Leader>znd",
 			"<cmd>lua require('neogen').generate({ type = 'file' })<CR>",
 			desc = "Generate File Documentation",
 		},
 		{
-			"<Leader>nf",
+			"<Leader>znf",
 			"<cmd>lua require('neogen').generate({ type = 'func' })<CR>",
 			desc = "Generate Function Documentation",
 		},
