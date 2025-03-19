@@ -39,7 +39,7 @@ end, { desc = "Insert datetime", silent = true, noremap = true })
 
 -- custome template keymaps
 -- c++ file doxygen style comment
-vim.keymap.set("n", "<Leader>ztcd", function()
+vim.keymap.set("n", "<Leader>td", function()
 	local lines_to_insert = {
 		"/**",
 		" * @file " .. get_filename(),
@@ -57,7 +57,7 @@ vim.keymap.set("n", "<Leader>ztcd", function()
 end, { desc = "Insert doxygen style file comment", silent = true, noremap = true })
 
 -- insert c++ function comment in doxygen style
-vim.keymap.set("n", "<Leader>ztcf", function()
+vim.keymap.set("n", "<Leader>tf", function()
 	local lines_to_insert = {
 		"/**",
 		" * @brief ",
