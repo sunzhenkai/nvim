@@ -3,6 +3,9 @@ return {
 	-- enabled = false,
 	config = function()
 		require("codecompanion").setup({
+			opts = {
+				language = "简体中文",
+			},
 			adapters = {
 				deepseek = function()
 					-- get deepseek key from environment variable
