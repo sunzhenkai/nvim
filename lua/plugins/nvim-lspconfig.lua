@@ -99,6 +99,12 @@ return {
 			-- return true if you don't want this server to be setup with lspconfig
 			---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
 			setup = {
+				clangd = function(_, opts)
+					-- config clangd lsp here
+					-- doc: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#clangd
+					opts.capabilities.offsetEncoding = { "utf-16" }
+					opts.filetypes = { "c", "cpp", "objc", "objcpp", "cuda" }
+				end,
 				-- example to setup with typescript.nvim
 				-- tsserver = function(_, opts)
 				--   require("typescript").setup({ server = opts })
