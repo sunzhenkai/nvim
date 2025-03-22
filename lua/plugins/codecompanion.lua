@@ -18,6 +18,11 @@ return {
 						env = {
 							api_key = api_key,
 						},
+						schema = {
+							model = {
+								default = "deepseek-chat",
+							},
+						},
 					})
 				end,
 			},
