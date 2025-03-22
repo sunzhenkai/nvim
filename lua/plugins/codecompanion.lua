@@ -8,7 +8,7 @@ return {
 			},
 			adapters = {
 				deepseek = function()
-					-- get deepseek key from environment variable
+					-- get deepseek api key from environment variable
 					local api_key = os.getenv("OPENAI_API_KEY")
 					if not api_key then
 						vim.notify("OPENAI_API_KEY not set！", vim.log.levels.ERROR)
