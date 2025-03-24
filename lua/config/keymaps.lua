@@ -69,3 +69,10 @@ vim.keymap.set("n", "<Leader>tf", function()
 	}
 	insert_multiple_lines(lines_to_insert)
 end, { desc = "Insert doxygen style function comment", silent = true, noremap = true })
+
+-- 可视模式下 <leader>y 复制到系统剪贴板
+vim.keymap.set("v", "<leader>y", '"+y', {
+	noremap = true, -- 非递归映射
+	silent = true, -- 静默执行
+	desc = "Copy to system clipboard", -- 可选的描述
+})
