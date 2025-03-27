@@ -76,3 +76,9 @@ vim.keymap.set("v", "<leader>y", '"+y', {
 	silent = true, -- 静默执行
 	desc = "Copy to system clipboard", -- 可选的描述
 })
+-- 可视模式下 <leader>p 粘贴系统剪贴板内容
+vim.keymap.set("v", "<leader>p", '"+p', {
+	noremap = true, -- 非递归映射
+	silent = true, -- 静默执行
+	desc = "Paste from system clipboard", -- 可选的描述
+})
