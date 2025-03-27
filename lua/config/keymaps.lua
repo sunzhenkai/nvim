@@ -69,3 +69,17 @@ vim.keymap.set("n", "<Leader>tf", function()
 	}
 	insert_multiple_lines(lines_to_insert)
 end, { desc = "Insert doxygen style function comment", silent = true, noremap = true })
+
+-- toggleterm
+vim.keymap.set(
+	"n",
+	"<Leader>tt",
+	':lua require("toggleterm").toggle()<CR>',
+	{ desc = "Toggle Terminal", silent = true, noremap = true }
+)
+vim.keymap.set(
+	"n",
+	"<C-/>",
+	':lua require("toggleterm").toggle()<CR>',
+	{ desc = "Toggle Terminal", silent = true, noremap = true }
+)
