@@ -83,3 +83,15 @@ vim.keymap.set(
 	':lua require("toggleterm").toggle()<CR>',
 	{ desc = "Toggle Terminal", silent = true, noremap = true }
 )
+-- 可视模式下 <leader>y 复制到系统剪贴板
+vim.keymap.set("v", "<leader>y", '"+y', {
+	noremap = true, -- 非递归映射
+	silent = true, -- 静默执行
+	desc = "Copy to system clipboard", -- 可选的描述
+})
+-- 可视模式下 <leader>p 粘贴系统剪贴板内容
+vim.keymap.set("v", "<leader>p", '"+p', {
+	noremap = true, -- 非递归映射
+	silent = true, -- 静默执行
+	desc = "Paste from system clipboard", -- 可选的描述
+})

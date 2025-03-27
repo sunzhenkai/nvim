@@ -3,12 +3,12 @@
 # Dependencies
 
 ```shell
-brew install fzf ripgrep luarocks lazygit
+brew install fzf ripgrep luarocks lazygit hunspell
 
 npm install yarn -g
 
 # ubuntu
-sudo apt install build-essential
+sudo apt install build-essential libhunspell-dev
 ```
 
 # 字体
