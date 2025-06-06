@@ -1,4 +1,5 @@
 # Nvim Config
+It has been migrate [here](https://github.com/sunzhenkai/dotfiles/tree/main/nvim).
 
 # Dependencies
 
